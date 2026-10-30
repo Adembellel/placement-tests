@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Learning Pods: Placement Tests</title>
+<style>
+:root{--bg:#f6f3ec;--fg:#1b1f3b;--card:#fff;--bd:#e4dfd3;--ac:#d9622b;--mu:#6b6f86;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1f3b;--fg:#f6f3ec;--card:#262b52;--bd:#383e6e;--mu:#aab0d0;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1b1f3b;--fg:#f6f3ec;--card:#262b52;--bd:#383e6e;--mu:#aab0d0;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 Helvetica,Arial,sans-serif}
+main{max-width:860px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:30px;margin:0 0 4px}h2{font-size:22px}p.mu,.mu{color:var(--mu)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin:16px 0}
+.card,.q{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px}
+button,.btn{font:inherit;cursor:pointer;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--fg);padding:10px 14px}
+button.p{background:var(--ac);border-color:var(--ac);color:#fff;font-weight:700}
+.topic{text-align:left;font-size:18px}.topic small{display:block;color:var(--mu);font-size:13px}
+input[type=text],textarea{width:100%;box-sizing:border-box;font:inherit;padding:10px;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--fg)}
+.row{display:flex;gap:12px;flex-wrap:wrap}.row>*{flex:1;min-width:200px}
+label.o{display:block;padding:8px 10px;margin:6px 0;border:1px solid var(--bd);border-radius:10px;cursor:pointer}
+label.o:has(input:checked){border-color:var(--ac);background:var(--bg)}
+.lv{margin:28px 0 8px;color:var(--ac);font-weight:700;text-transform:uppercase;font-size:13px;letter-spacing:.08em}
+.bar{height:10px;border-radius:5px;background:var(--bd);overflow:hidden}.bar i{display:block;height:100%;background:var(--ac)}
+.big{font-size:48px;font-weight:700;margin:0}.err{color:#c0392b;font-weight:700}
+.top{display:flex;justify-content:space-between;margin-bottom:8px}table{border-collapse:collapse;font-size:14px}td,th{border-bottom:1px solid var(--bd);padding:6px 10px;text-align:left;white-space:nowrap}.tc{display:flex;flex-direction:column;gap:6px}.tc .topic{flex:1}.ed{font-size:13px}label{display:block;margin-top:8px}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;padding:16px;z-index:50}.ov .card{max-width:440px}.sw{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));right:12px;z-index:40;width:58px;height:30px;border-radius:15px;border:1px solid var(--bd);background:var(--card);padding:0}.sw i{position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:var(--ac);transition:transform .2s;display:flex;align-items:center;justify-content:center;font-size:13px;font-style:normal}.sw[aria-checked=true] i{transform:translateX(28px)}main{padding-top:56px}</style></head><body><main id="app"></main><button id="th" class="sw" role="switch" aria-label="Dark mode" aria-checked="false"><i></i></button>
+<script src="questions.js"></script>
+<script>
+const SCRIPT_URL="PASTE_YOUR_WEB_APP_URL_HERE";
+const LV=["Basics","Intermediate","Advanced"],BD=["Beginner","Intermediate","Advanced"],BDf=["Débutant","Intermédiaire","Avancé"],LVf=["Bases","Intermédiaire","Avancé"];
+const S={en:{h:"Placement tests",intro:"15 questions per topic: 5 basic, 5 intermediate, 5 advanced. This is not a grade. It only helps us build balanced pods, so please work alone and don’t search for answers.",nm:"Your name",dc:"Discord username",ch:"Choose a topic",qn:"15 questions",need:"Please enter your name and Discord username first.",take:"Take the test",beg:"I’m a total beginner",begNote:"No test needed: you will be placed as a Beginner.",sub:"Submit",ans:"Please answer question ",back:"← Topics",lvl:"Level ",res:"Level: ",sentOk:"Your result was sent to the admins ✓",sentNo:"We couldn’t send your result automatically. Copy this line and paste it in #placement-test on Discord.",copy:"Copy result",copied:"Copied ✓",tr:"Translating the questions…",trfail:"The French translation isn’t available right now, so the test is shown in English.",bands:"0–5 Beginner · 6–10 Intermediate · 11–15 Advanced",begDone:"You were placed as a Beginner.",cfT:"Submit your result?",cfB:"You are submitting as {n} ({d}). Once sent, you can’t change your answers or retake this topic.",yes:"Yes, submit",no:"Go back",taken:"You have already taken this test. If this is a mistake, please contact an admin.",once:"You have one attempt per topic. Once you start, the attempt is used.",wait:"Checking…"},
+fr:{h:"Tests de niveau",intro:"15 questions par thème : 5 de base, 5 intermédiaires, 5 avancées. Ce n’est pas une note. Cela nous aide seulement à former des groupes équilibrés, alors travaille seul et ne cherche pas les réponses.",nm:"Ton nom",dc:"Nom d’utilisateur Discord",ch:"Choisis un thème",qn:"15 questions",need:"Entre d’abord ton nom et ton nom d’utilisateur Discord.",take:"Passer le test",beg:"Je suis totalement débutant",begNote:"Pas de test : tu seras placé comme Débutant.",sub:"Envoyer",ans:"Réponds à la question ",back:"← Thèmes",lvl:"Niveau ",res:"Niveau : ",sentOk:"Ton résultat a été envoyé aux admins ✓",sentNo:"Impossible d’envoyer ton résultat automatiquement. Copie cette ligne et colle-la dans #placement-test sur Discord.",copy:"Copier le résultat",copied:"Copié ✓",tr:"Traduction des questions…",trfail:"La traduction française n’est pas disponible pour le moment, le test est affiché en anglais.",bands:"0–5 Débutant · 6–10 Intermédiaire · 11–15 Avancé",begDone:"Tu as été placé comme Débutant.",cfT:"Envoyer ton résultat ?",cfB:"Tu envoies en tant que {n} ({d}). Une fois envoyé, tu ne peux plus modifier tes réponses ni repasser ce thème.",yes:"Oui, envoyer",no:"Revenir",taken:"Tu as déjà passé ce test. Si c’est une erreur, contacte un admin.",once:"Tu as une seule tentative par thème. Une fois commencé, la tentative est utilisée.",wait:"Vérification…"}};
+let lang="en",picked=false,cur,qs,who={n:"",d:""},TH="light";
+const app=document.getElementById("app"),t=k=>S[lang][k],bd=i=>(lang=="fr"?BDf:BD)[i],lvn=i=>(lang=="fr"?LVf:LV)[i];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const parse=x=>x.trim().split("\n").map(l=>{const p=l.split("|").map(s=>s.trim());return{q:p[0],o:p.slice(1)}});
+const shuf=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const nm=x=>lang=="fr"&&x.nf?x.nf:x.n;
+async function call(m,o){if(!SCRIPT_URL.startsWith("https://"))return null;try{const r=m=="g"?await fetch(SCRIPT_URL+"?"+new URLSearchParams(o)):await fetch(SCRIPT_URL,{method:"POST",body:JSON.stringify(o)});return await r.json()}catch(e){return null}}
+function confirmBox(yes){const o=document.createElement("div");o.className="ov";o.innerHTML=`<div class="card"><h2>${t("cfT")}</h2><p>${esc(t("cfB").replace("{n}",who.n).replace("{d}",who.d))}</p><p><button class="p" id="cy">${t("yes")}</button> <button id="cn">${t("no")}</button></p></div>`;document.body.appendChild(o);document.getElementById("cn").onclick=()=>o.remove();document.getElementById("cy").onclick=()=>{o.remove();yes()}}
+function gate(){app.innerHTML=`<h1>Learning Pods</h1><h2>Which language do you want to learn in?<br><span class="mu">Dans quelle langue veux-tu apprendre ?</span></h2><div class="grid"><button class="card topic gl" data-l="en">English</button><button class="card topic gl" data-l="fr">Français</button></div>`;app.querySelectorAll(".gl").forEach(b=>b.onclick=()=>{lang=b.dataset.l;picked=true;home()})}
+function home(){if(!picked){gate();return}
+const a=document.getElementById("wn");if(a){who.n=a.value;who.d=document.getElementById("wd").value}
+app.innerHTML=`<div class="top"><span></span><span><button class="lg" data-l="en">EN</button> <button class="lg" data-l="fr">FR</button></span></div><h1>${t("h")}</h1><p class="mu">${t("intro")}</p>
+<div class="row"><div><label>${t("nm")}</label><input type="text" id="wn" value="${esc(who.n)}"></div><div><label>${t("dc")}</label><input type="text" id="wd" value="${esc(who.d)}"></div></div>
+<p id="msg" class="err"></p><h2>${t("ch")}</h2><div class="grid">${TOPICS.map(x=>`<button class="card topic" data-id="${x.id}">${x.e} ${esc(nm(x))}<small>${t("qn")}</small></button>`).join("")}</div>`;
+app.querySelectorAll(".lg").forEach(b=>b.onclick=()=>{lang=b.dataset.l;home()});
+app.querySelectorAll(".topic").forEach(b=>b.onclick=()=>{who.n=wn.value.trim();who.d=wd.value.trim();if(!who.n||!who.d){msg.textContent=t("need");return}intro(b.dataset.id)})}
+function taken(){app.innerHTML=`<button id="bk">${t("back")}</button><h1>${cur.e} ${esc(nm(cur))}</h1><p class="err">${t("taken")}</p>`;bk.onclick=home}
+async function intro(id){cur=TOPICS.find(x=>x.id==id);app.innerHTML=`<p class="mu">${t("wait")}</p>`;
+const r=await call("g",{action:"check",tid:cur.id,d:who.d});if(r&&r.taken){taken();return}
+app.innerHTML=`<button id="bk">${t("back")}</button><h1>${cur.e} ${esc(nm(cur))}</h1><p class="mu">${esc(who.n)} · ${esc(who.d)}</p><p class="mu">${t("once")}</p><div class="card"><button class="p" id="tk">${t("take")}</button></div><div class="card" style="margin-top:12px"><p class="mu">${t("begNote")}</p><button id="bg">${t("beg")}</button></div>`;
+const begin=async()=>{const r=await call("p",{action:"start",tid:cur.id,d:who.d,n:who.n});return !(r&&r.taken)};
+bk.onclick=home;tk.onclick=async()=>{tk.disabled=true;if(await begin())start();else taken()};bg.onclick=()=>confirmBox(async()=>{if(await begin())finish(null);else taken()})}
+function start(){const base=parse((lang=="fr"&&cur.fr)?cur.fr:cur.en);
+qs=base.map(x=>({q:x.q,a:x.o[0],s:shuf(x.o.slice())}));
+app.innerHTML=`<button id="bk">${t("back")}</button><h1>${cur.e} ${esc(nm(cur))}</h1><p class="mu">${esc(who.n)} · ${esc(who.d)}</p>`+qs.map((x,i)=>(i%5?"":`<div class="lv">${t("lvl")}${i/5+1} · ${lvn(i/5)}</div>`)+`<div class="q"><b>${i+1}. ${esc(x.q)}</b>${x.s.map((o,k)=>`<label class="o"><input type="radio" name="q${i}" value="${k}"> ${esc(o)}</label>`).join("")}</div>`).join("")+`<p id="msg" class="err"></p><button class="p" id="go">${t("sub")}</button>`;
+bk.onclick=home;go.onclick=submit;window.scrollTo(0,0)}
+function submit(){const lv=[0,0,0];
+for(let i=0;i<qs.length;i++){const r=document.querySelector(`input[name=q${i}]:checked`);if(!r){msg.textContent=t("ans")+(i+1)+".";return}if(qs[i].s[r.value]==qs[i].a)lv[Math.floor(i/5)]++}
+confirmBox(()=>finish(lv))}
+async function finish(lv){const self=!lv,sc=self?0:lv[0]+lv[1]+lv[2],b=self?0:sc<=5?0:sc<=10?1:2;
+app.innerHTML=`<p class="mu">…</p>`;
+const r=await call("p",{action:"finish",tid:cur.id,topic:cur.n,d:who.d,n:who.n,lang:lang,sc:self?null:sc,lv:BD[b],b:lv?{B:lv[0],I:lv[1],A:lv[2]}:null,self:self});const ok=!!(r&&r.ok);
+const line=`PODS | ${cur.n} | ${who.d} | ${who.n} | ${lang} | ${self?"total beginner":sc+"/15"} | ${BD[b]}`;
+app.innerHTML=`<h1>${cur.e} ${esc(nm(cur))}</h1><p class="mu">${esc(who.n)}</p><div class="card">${self?`<h2>${t("res")}${bd(0)}</h2><p>${t("begDone")}</p>`:`<p class="big">${sc}/15</p><h2>${t("res")}${bd(b)}</h2><p class="mu">${t("bands")}</p>${LV.map((n,i)=>`<p>${lvn(i)}: ${lv[i]}/5</p><div class="bar"><i style="width:${lv[i]*20}%"></i></div>`).join("")}`}</div>
+<p class="${ok?"":"err"}">${ok?t("sentOk"):t("sentNo")}</p>${ok?"":`<textarea id="line" rows="3" readonly>${esc(line)}</textarea><p><button class="p" id="cp">${t("copy")}</button></p>`}<p><button id="bk">${t("back")}</button></p>`;
+bk.onclick=home;if(!ok)cp.onclick=async()=>{try{await navigator.clipboard.writeText(line);cp.textContent=t("copied")}catch(e){document.getElementById("line").select()}};window.scrollTo(0,0)}
+try{TH=localStorage.getItem("pods_theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){}
+const thb=document.getElementById("th");
+const applyTh=()=>{document.documentElement.setAttribute("data-theme",TH);thb.setAttribute("aria-checked",TH=="dark");thb.firstChild.textContent=TH=="dark"?"🌙":"☀️"};
+thb.onclick=()=>{TH=TH=="dark"?"light":"dark";try{localStorage.setItem("pods_theme",TH)}catch(e){}applyTh()};applyTh();
+home();
+
+</script></body></html>
