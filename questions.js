@@ -261,4 +261,123 @@ Quel mot est synonyme de « néanmoins » ?|cependant|donc|ainsi|car
 « Quoique » est suivi de quel mode ?|Le subjonctif|L’indicatif futur|L’impératif|L’infinitif
 `
 },
+
+{
+ id:"linux",
+ n:"Linux",
+ e:"🐧",
+ en:`
+Which command lists the files in a folder?|ls|dir|show|list
+Which command shows the current directory?|pwd|cwd|where|path
+Which command changes the current directory?|cd|chdir|move|goto
+Which command creates a new folder?|mkdir|newdir|md|folder
+Which command displays the contents of a file?|cat|print|open|view
+What does sudo do?|Runs a command with administrator rights|Deletes a file|Shows disk space|Restarts the network
+Which command removes a file?|rm|del|erase|remove
+What does chmod do?|Changes file permissions|Changes the owner’s name|Copies a file|Compresses a folder
+What does the > symbol do in the command ls > list.txt?|Writes the output into a file|Compares two files|Deletes the file|Runs the command twice
+Which command searches for text inside files?|grep|search|seek|look
+What does the ps command show?|Running processes|Disk partitions|Network speed|Installed packages
+Which file stores the list of users on a Linux system?|/etc/passwd|/etc/users.txt|/home/users|/var/accounts
+What does chmod 755 file give?|Full rights to the owner, read and execute to others|Full rights to everyone|Only the owner can read|No one can run it
+What is the root directory?|/ (the top of the file system)|/home|/root|/usr
+Which command shows free disk space?|df -h|top|ping|whoami
+`,
+ fr:`
+Quelle commande liste les fichiers d’un dossier ?|ls|dir|show|list
+Quelle commande affiche le dossier courant ?|pwd|cwd|where|path
+Quelle commande change de dossier ?|cd|chdir|move|goto
+Quelle commande crée un nouveau dossier ?|mkdir|newdir|md|folder
+Quelle commande affiche le contenu d’un fichier ?|cat|print|open|view
+Que fait sudo ?|Il exécute une commande avec les droits d’administrateur|Il supprime un fichier|Il affiche l’espace disque|Il redémarre le réseau
+Quelle commande supprime un fichier ?|rm|del|erase|remove
+Que fait chmod ?|Il modifie les permissions d’un fichier|Il change le nom du propriétaire|Il copie un fichier|Il compresse un dossier
+Que fait le symbole > dans la commande ls > liste.txt ?|Il écrit la sortie dans un fichier|Il compare deux fichiers|Il supprime le fichier|Il exécute la commande deux fois
+Quelle commande cherche du texte dans des fichiers ?|grep|search|seek|look
+Que montre la commande ps ?|Les processus en cours|Les partitions du disque|La vitesse du réseau|Les paquets installés
+Quel fichier contient la liste des utilisateurs d’un système Linux ?|/etc/passwd|/etc/users.txt|/home/users|/var/accounts
+Que donne chmod 755 fichier ?|Tous les droits au propriétaire, lecture et exécution aux autres|Tous les droits à tout le monde|Seul le propriétaire peut lire|Personne ne peut l’exécuter
+Qu’est-ce que le répertoire racine ?|/ (le sommet du système de fichiers)|/home|/root|/usr
+Quelle commande affiche l’espace disque libre ?|df -h|top|ping|whoami
+`
+},
+{
+ id:"ai",
+ n:"AI",
+ nf:"IA",
+ e:"🧠",
+ en:`
+What does AI stand for?|Artificial Intelligence|Automatic Internet|Advanced Interface|Applied Integration
+What is machine learning?|Learning patterns from data|Writing every rule by hand|Repairing hardware|Browsing the web
+Which is an example of AI in daily life?|A voice assistant|A light bulb|A paper map|A screwdriver
+What is training data?|Examples used to teach a model|The model’s final answer|The computer’s memory chip|A type of cable
+What is a chatbot?|A program that talks with users|A type of keyboard|A video format|An antivirus
+What is supervised learning?|Learning from labeled examples|Learning with no data|Learning only from rewards|Learning by copying code
+What is a neural network inspired by?|The brain|The sun|The internet|Weather patterns
+What does overfitting mean?|The model memorizes training data and fails on new data|The model is too small|The model runs too fast|The data is too clean
+What is a classification task?|Predicting a category|Predicting a number only|Drawing images|Cleaning data
+Which language is most used for machine learning?|Python|HTML|CSS|Assembly
+What is a prompt in generative AI?|The instruction given to the model|The training data|A type of chip|The final output
+What does a loss function measure?|How wrong the model’s predictions are|The size of the model|The training time|The number of users
+What is reinforcement learning?|Learning by trial and error with rewards|Learning from labeled photos|Memorizing a dictionary|Copying another model
+Why split data into training and test sets?|To check performance on unseen data|Only to make training faster|To reduce the file size|To avoid using labels
+What is bias in an AI system?|Systematically unfair or skewed results from the data or design|A fast response|An extra layer|A hardware fault
+`,
+ fr:`
+Que signifie IA ?|Intelligence Artificielle|Internet Automatique|Interface Avancée|Intégration Appliquée
+Qu’est-ce que l’apprentissage automatique ?|Apprendre des motifs à partir de données|Écrire chaque règle à la main|Réparer du matériel|Naviguer sur le web
+Lequel est un exemple d’IA dans la vie quotidienne ?|Un assistant vocal|Une ampoule|Une carte en papier|Un tournevis
+Que sont les données d’entraînement ?|Des exemples utilisés pour apprendre à un modèle|La réponse finale du modèle|La puce mémoire de l’ordinateur|Un type de câble
+Qu’est-ce qu’un chatbot ?|Un programme qui discute avec les utilisateurs|Un type de clavier|Un format vidéo|Un antivirus
+Qu’est-ce que l’apprentissage supervisé ?|Apprendre à partir d’exemples étiquetés|Apprendre sans données|Apprendre uniquement avec des récompenses|Apprendre en copiant du code
+De quoi un réseau de neurones s’inspire-t-il ?|Du cerveau|Du soleil|D’Internet|Des schémas météo
+Que signifie le surapprentissage (overfitting) ?|Le modèle mémorise les données d’entraînement et échoue sur de nouvelles données|Le modèle est trop petit|Le modèle s’exécute trop vite|Les données sont trop propres
+Qu’est-ce qu’une tâche de classification ?|Prédire une catégorie|Prédire uniquement un nombre|Dessiner des images|Nettoyer des données
+Quel langage est le plus utilisé en apprentissage automatique ?|Python|HTML|CSS|Assembleur
+Qu’est-ce qu’un prompt en IA générative ?|L’instruction donnée au modèle|Les données d’entraînement|Un type de puce|Le résultat final
+Que mesure une fonction de perte ?|À quel point les prédictions du modèle sont fausses|La taille du modèle|Le temps d’entraînement|Le nombre d’utilisateurs
+Qu’est-ce que l’apprentissage par renforcement ?|Apprendre par essais et erreurs avec des récompenses|Apprendre à partir de photos étiquetées|Mémoriser un dictionnaire|Copier un autre modèle
+Pourquoi séparer les données en ensembles d’entraînement et de test ?|Pour vérifier les performances sur des données inconnues|Seulement pour accélérer l’entraînement|Pour réduire la taille du fichier|Pour éviter les étiquettes
+Qu’est-ce qu’un biais dans un système d’IA ?|Des résultats systématiquement injustes ou faussés par les données ou la conception|Une réponse rapide|Une couche supplémentaire|Une panne matérielle
+`
+},
+{
+ id:"uiux",
+ n:"UI/UX",
+ e:"🎨",
+ en:`
+What does UI stand for?|User Interface|Universal Internet|User Integration|Unified Input
+What does UX stand for?|User Experience|User Extension|Unique Exchange|Universal Experience
+What is a wireframe?|A simple layout sketch of a screen|A final colored design|A type of font|A programming language
+Which tool is commonly used for UI design?|Figma|Excel|Notepad|Terminal
+What is a button used for?|Letting users take an action|Storing data|Changing the screen size|Printing
+What is a prototype?|An interactive model of a design|A finished app|A color palette|A database
+What is a color palette?|The set of colors used in a design|A list of fonts|A page layout|A type of image
+Why is consistency important in a design?|Users learn the interface faster|It makes pages heavier|It hides content|It removes navigation
+What is a user persona?|A fictional profile of a typical user|A real customer’s password|A team member|A type of button
+What is white space (negative space)?|Empty space that helps readability|A white background only|Hidden text|A broken layout
+What is usability testing?|Watching real users try the product|Testing the server speed|Checking the code syntax|Translating the text
+What does WCAG address?|Web accessibility|Server security|Database design|Image compression
+What is a user flow?|The path a user takes to complete a task|A type of animation|A color rule|A hosting plan
+What is A/B testing?|Comparing two versions to see which performs better|Testing two servers|Checking two languages|Writing two codes
+What does visual hierarchy do?|Guides the eye to the most important elements first|Makes all elements equal|Removes images|Adds more colors
+`,
+ fr:`
+Que signifie UI ?|User Interface (interface utilisateur)|Universal Internet|User Integration|Unified Input
+Que signifie UX ?|User Experience (expérience utilisateur)|User Extension|Unique Exchange|Universal Experience
+Qu’est-ce qu’un wireframe (maquette fil de fer) ?|Un schéma simple de la disposition d’un écran|Un design final en couleurs|Un type de police|Un langage de programmation
+Quel outil est couramment utilisé pour le design d’interface ?|Figma|Excel|Bloc-notes|Terminal
+À quoi sert un bouton ?|À permettre à l’utilisateur d’effectuer une action|À stocker des données|À changer la taille de l’écran|À imprimer
+Qu’est-ce qu’un prototype ?|Un modèle interactif d’un design|Une application terminée|Une palette de couleurs|Une base de données
+Qu’est-ce qu’une palette de couleurs ?|L’ensemble des couleurs utilisées dans un design|Une liste de polices|Une mise en page|Un type d’image
+Pourquoi la cohérence est-elle importante dans un design ?|L’utilisateur apprend plus vite l’interface|Elle alourdit les pages|Elle cache le contenu|Elle supprime la navigation
+Qu’est-ce qu’une persona ?|Un profil fictif d’utilisateur type|Le mot de passe d’un vrai client|Un membre de l’équipe|Un type de bouton
+Qu’est-ce que l’espace blanc (espace négatif) ?|Un espace vide qui améliore la lisibilité|Uniquement un fond blanc|Du texte caché|Une mise en page cassée
+Qu’est-ce qu’un test d’utilisabilité ?|Observer de vrais utilisateurs essayer le produit|Tester la vitesse du serveur|Vérifier la syntaxe du code|Traduire le texte
+Que couvre le WCAG ?|L’accessibilité du web|La sécurité des serveurs|La conception de bases de données|La compression d’images
+Qu’est-ce qu’un parcours utilisateur (user flow) ?|Le chemin suivi par un utilisateur pour accomplir une tâche|Un type d’animation|Une règle de couleurs|Une offre d’hébergement
+Qu’est-ce qu’un test A/B ?|Comparer deux versions pour voir laquelle fonctionne mieux|Tester deux serveurs|Vérifier deux langues|Écrire deux codes
+À quoi sert la hiérarchie visuelle ?|À guider l’œil vers les éléments les plus importants en premier|À rendre tous les éléments égaux|À supprimer les images|À ajouter plus de couleurs
+`
+},
 ];
