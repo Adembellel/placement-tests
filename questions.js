@@ -53,46 +53,6 @@ Dans un robot suiveur de ligne, qu’est-ce qui lit généralement la ligne ?|De
 `
 },
 
-{
- id:"it",
- n:"IT",
- nf:"Informatique",
- e:"💻",
- en:`
-What does CPU stand for?|Central Processing Unit|Computer Personal Unit|Central Program Utility|Core Power Unit
-Which is a volatile memory?|RAM|SSD|Hard disk|USB drive
-What is an operating system?|Software that manages hardware and apps|A web browser|A type of cable|An antivirus program
-Which is an operating system?|Linux|Chrome|Excel|Photoshop
-What does a file extension like .pdf indicate?|The file type|The file size|The owner|The creation date
-What does an SSD use to store data?|Flash memory|Magnetic platters|Optical discs|Punch cards
-What is a backup?|A copy of data kept separately|A faster computer|A password|A virus scan
-What is the main purpose of a firewall?|Filtering network traffic|Speeding up the screen|Cooling the CPU|Compressing files
-What does the BIOS or UEFI do at startup?|Initializes hardware and starts the boot|Updates websites|Deletes temporary files|Installs apps
-What is a process?|A running program|A saved file|A folder|A user account
-What does RAID 1 provide?|Mirroring of disks|Striping without redundancy|A faster CPU|Encryption
-What is virtualization?|Running several virtual machines on one host|Making a screen larger|Compressing a disk|Cloud storage only
-In Linux, which permissions give the owner read, write and execute, and others read only?|rwxr--r--|rw-rw-rw-|r--r--r--|rwx------
-What does a hash function do?|Maps data to a fixed-size value|Encrypts data reversibly|Compresses video|Routes packets
-What is two-factor authentication?|Two different proofs of identity|Two passwords of the same kind|Two accounts|Two antiviruses
-`,
- fr:`
-Que signifie CPU ?|Unité centrale de traitement (Central Processing Unit)|Computer Personal Unit|Central Program Utility|Core Power Unit
-Quelle mémoire est volatile ?|La RAM|Le SSD|Le disque dur|La clé USB
-Qu’est-ce qu’un système d’exploitation ?|Un logiciel qui gère le matériel et les applications|Un navigateur web|Un type de câble|Un antivirus
-Lequel est un système d’exploitation ?|Linux|Chrome|Excel|Photoshop
-Qu’indique l’extension d’un fichier comme .pdf ?|Le type de fichier|La taille du fichier|Le propriétaire|La date de création
-Qu’utilise un SSD pour stocker les données ?|De la mémoire flash|Des plateaux magnétiques|Des disques optiques|Des cartes perforées
-Qu’est-ce qu’une sauvegarde ?|Une copie des données conservée à part|Un ordinateur plus rapide|Un mot de passe|Une analyse antivirus
-Quel est le rôle principal d’un pare-feu ?|Filtrer le trafic réseau|Accélérer l’écran|Refroidir le processeur|Compresser les fichiers
-Que fait le BIOS ou l’UEFI au démarrage ?|Il initialise le matériel et lance le démarrage|Il met à jour les sites web|Il supprime les fichiers temporaires|Il installe des applications
-Qu’est-ce qu’un processus ?|Un programme en cours d’exécution|Un fichier enregistré|Un dossier|Un compte utilisateur
-Que propose le RAID 1 ?|La mise en miroir des disques|Le découpage sans redondance|Un processeur plus rapide|Le chiffrement
-Qu’est-ce que la virtualisation ?|Faire tourner plusieurs machines virtuelles sur un même hôte|Agrandir un écran|Compresser un disque|Uniquement le stockage dans le cloud
-Sous Linux, quelles permissions donnent au propriétaire lecture, écriture et exécution, et aux autres lecture seule ?|rwxr--r--|rw-rw-rw-|r--r--r--|rwx------
-Que fait une fonction de hachage ?|Elle associe des données à une valeur de taille fixe|Elle chiffre les données de façon réversible|Elle compresse une vidéo|Elle route les paquets
-Qu’est-ce que l’authentification à deux facteurs ?|Deux preuves d’identité différentes|Deux mots de passe du même type|Deux comptes|Deux antivirus
-`
-},
 
 {
  id:"network",
