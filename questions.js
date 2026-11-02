@@ -53,45 +53,44 @@ Dans un robot suiveur de ligne, qu’est-ce qui lit généralement la ligne ?|De
 `
 },
 
-
 {
- id:"network",
- n:"Networking (Réseau)",
- nf:"Réseaux",
+ id:"reseau",
+ n:"Computer Networking",
+ nf:"Réseau informatique",
  e:"🌐",
  en:`
-What does IP stand for?|Internet Protocol|Internal Program|Input Port|Intranet Provider
-Which device connects different networks?|Router|Keyboard|Monitor|Speaker
-What does Wi-Fi provide?|Wireless network access|Electric power|Disk storage|Printing only
-Which cable is common in local networks?|Ethernet|HDMI|Audio jack|Power cord
-What is a LAN?|A network in a small area|A global network|A type of virus|A web browser
+What is a computer network?|Devices connected to share data and resources|A single computer|A type of software license|A storage disk
+Which device connects different networks and routes data between them?|Router|Keyboard|Monitor|Printer
+Which cable is most common in local networks?|Ethernet (RJ45)|HDMI|Audio jack|Power cord
+What does LAN stand for?|Local Area Network|Large Access Node|Linked Area Network|Logical Address Number
+What is a star topology?|All devices connect to a central device|Devices connected in a ring|Devices connected by one single cable|Devices with no connection
 How many bits are in an IPv4 address?|32|16|64|128
 What does DNS do?|Translates names into IP addresses|Encrypts email|Assigns Wi-Fi passwords|Blocks ads
 What does DHCP do?|Assigns IP addresses automatically|Stores websites|Cools servers|Prints documents
-Which port does HTTPS use by default?|443|80|21|25
 What does a switch do?|Forwards frames between devices on a LAN|Translates domain names|Stores emails|Provides internet from space
+Which port does HTTPS use by default?|443|80|21|25
 What does 192.168.1.0/24 mean?|The first 24 bits are the network part|Only 24 hosts exist|It uses port 24|It is version 24
-Which protocol is connection-oriented and reliable?|TCP|UDP|ICMP|DNS
 What does NAT do?|Translates private addresses to a public one|Encrypts traffic|Assigns MAC addresses|Blocks all ports
 At which OSI layer does a router mainly work?|Network (layer 3)|Physical (layer 1)|Application (layer 7)|Data link (layer 2)
-What does ARP do?|Maps an IP address to a MAC address|Maps names to IPs|Encrypts packets|Assigns subnets
+Which protocol is connection-oriented and reliable?|TCP|UDP|ICMP|DNS
+What does a VLAN do?|Splits a switch into separate logical networks|Increases Wi-Fi range|Encrypts the disk|Assigns domain names
 `,
  fr:`
-Que signifie IP ?|Internet Protocol (protocole Internet)|Internal Program|Input Port|Intranet Provider
-Quel appareil relie des réseaux différents ?|Le routeur|Le clavier|L’écran|Le haut-parleur
-Que fournit le Wi-Fi ?|Un accès réseau sans fil|De l’électricité|Du stockage|Uniquement l’impression
-Quel câble est courant dans les réseaux locaux ?|Ethernet|HDMI|Prise jack audio|Cordon d’alimentation
-Qu’est-ce qu’un LAN ?|Un réseau sur une petite zone|Un réseau mondial|Un type de virus|Un navigateur web
+Qu’est-ce qu’un réseau informatique ?|Des appareils connectés pour partager des données et des ressources|Un seul ordinateur|Un type de licence logicielle|Un disque de stockage
+Quel appareil relie des réseaux différents et achemine les données entre eux ?|Le routeur|Le clavier|L’écran|L’imprimante
+Quel câble est le plus courant dans les réseaux locaux ?|Ethernet (RJ45)|HDMI|Prise jack audio|Cordon d’alimentation
+Que signifie LAN ?|Local Area Network (réseau local)|Large Access Node|Linked Area Network|Logical Address Number
+Qu’est-ce qu’une topologie en étoile ?|Tous les appareils sont reliés à un appareil central|Les appareils sont reliés en anneau|Les appareils sont reliés par un seul câble|Les appareils ne sont pas reliés
 Combien de bits compte une adresse IPv4 ?|32|16|64|128
 Que fait le DNS ?|Il traduit des noms en adresses IP|Il chiffre les e-mails|Il attribue les mots de passe Wi-Fi|Il bloque les publicités
 Que fait le DHCP ?|Il attribue automatiquement des adresses IP|Il stocke des sites web|Il refroidit les serveurs|Il imprime des documents
-Quel port le HTTPS utilise-t-il par défaut ?|443|80|21|25
 Que fait un commutateur (switch) ?|Il transmet les trames entre les appareils d’un LAN|Il traduit les noms de domaine|Il stocke les e-mails|Il fournit Internet par satellite
+Quel port le HTTPS utilise-t-il par défaut ?|443|80|21|25
 Que signifie 192.168.1.0/24 ?|Les 24 premiers bits forment la partie réseau|Il n’y a que 24 hôtes|Il utilise le port 24|C’est la version 24
-Quel protocole est orienté connexion et fiable ?|TCP|UDP|ICMP|DNS
 Que fait le NAT ?|Il traduit des adresses privées en une adresse publique|Il chiffre le trafic|Il attribue des adresses MAC|Il bloque tous les ports
 À quelle couche OSI un routeur travaille-t-il principalement ?|Réseau (couche 3)|Physique (couche 1)|Application (couche 7)|Liaison de données (couche 2)
-Que fait l’ARP ?|Il associe une adresse IP à une adresse MAC|Il associe des noms à des IP|Il chiffre les paquets|Il attribue des sous-réseaux
+Quel protocole est orienté connexion et fiable ?|TCP|UDP|ICMP|DNS
+Que fait un VLAN ?|Il sépare un commutateur en plusieurs réseaux logiques|Il augmente la portée du Wi-Fi|Il chiffre le disque|Il attribue des noms de domaine
 `
 },
 
