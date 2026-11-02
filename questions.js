@@ -380,4 +380,84 @@ Qu’est-ce qu’un test A/B ?|Comparer deux versions pour voir laquelle fonctio
 À quoi sert la hiérarchie visuelle ?|À guider l’œil vers les éléments les plus importants en premier|À rendre tous les éléments égaux|À supprimer les images|À ajouter plus de couleurs
 `
 },
+ {
+ id:"video",
+ n:"Video Editing",
+ nf:"Montage vidéo",
+ e:"🎬",
+ en:`
+What is the timeline in a video editor?|The area where clips are arranged in order|The export button|The list of fonts|The sound card
+Which free app, popular for short videos on phones, is owned by ByteDance?|CapCut|Premiere Pro|Final Cut Pro|DaVinci Resolve
+What does trimming a clip do?|Shortens it by cutting its start or end|Adds a filter|Changes its file format|Makes it louder
+What does FPS stand for?|Frames per second|Files per screen|Format per size|Filters per scene
+What is a transition?|An effect between two clips|A type of microphone|A video file format|A font style
+Which aspect ratio is typically used for TikTok and Reels?|9:16|16:9|4:3|1:1
+What is a keyframe used for?|Changing a property, like position or size, over time|Deleting a clip|Exporting a video|Recording audio
+What is B-roll?|Extra footage that supports the main footage|The main interview|A sound effect|A subtitle file
+Which video editing software is made by Adobe?|Premiere Pro|DaVinci Resolve|Final Cut Pro|CapCut
+What is the purpose of color grading?|Setting the look and mood through color|Removing background noise|Compressing the video|Adding subtitles
+Which video editing software is developed by Apple?|Final Cut Pro|Premiere Pro|DaVinci Resolve|Vegas Pro
+What does exporting at 1080p mean?|A resolution of 1920 by 1080 pixels|A frame rate of 1080|A file size of 1080 MB|A duration of 1080 seconds
+What does a higher bitrate usually mean?|Higher quality and a larger file|Lower quality and a smaller file|Slower playback|Fewer frames
+What is a codec?|A method for compressing and decompressing video|A type of camera lens|A color filter|A subtitle style
+What is the standard frame rate for cinema?|24 fps|10 fps|90 fps|144 fps
+`,
+ fr:`
+Qu’est-ce que la timeline (ligne de temps) dans un logiciel de montage ?|La zone où les clips sont organisés dans l’ordre|Le bouton d’exportation|La liste des polices|La carte son
+Quelle application gratuite, populaire pour les vidéos courtes sur téléphone, appartient à ByteDance ?|CapCut|Premiere Pro|Final Cut Pro|DaVinci Resolve
+Que fait le découpage (trim) d’un clip ?|Il le raccourcit en coupant son début ou sa fin|Il ajoute un filtre|Il change son format de fichier|Il augmente le volume
+Que signifie FPS ?|Images par seconde (frames per second)|Fichiers par écran|Format par taille|Filtres par scène
+Qu’est-ce qu’une transition ?|Un effet entre deux clips|Un type de microphone|Un format de fichier vidéo|Un style de police
+Quel format d’image est généralement utilisé pour TikTok et les Reels ?|9:16|16:9|4:3|1:1
+À quoi sert une image clé (keyframe) ?|À modifier une propriété, comme la position ou la taille, au fil du temps|À supprimer un clip|À exporter une vidéo|À enregistrer du son
+Qu’est-ce que le B-roll ?|Des images supplémentaires qui illustrent les images principales|L’interview principale|Un effet sonore|Un fichier de sous-titres
+Quel logiciel de montage vidéo est édité par Adobe ?|Premiere Pro|DaVinci Resolve|Final Cut Pro|CapCut
+À quoi sert l’étalonnage des couleurs ?|À définir le style et l’ambiance grâce aux couleurs|À supprimer le bruit de fond|À compresser la vidéo|À ajouter des sous-titres
+Quel logiciel de montage vidéo est développé par Apple ?|Final Cut Pro|Premiere Pro|DaVinci Resolve|Vegas Pro
+Que signifie une exportation en 1080p ?|Une résolution de 1920 par 1080 pixels|Une cadence de 1080 images par seconde|Un fichier de 1080 Mo|Une durée de 1080 secondes
+Que signifie généralement un débit (bitrate) plus élevé ?|Une meilleure qualité et un fichier plus lourd|Une qualité plus faible et un fichier plus léger|Une lecture plus lente|Moins d’images
+Qu’est-ce qu’un codec ?|Une méthode de compression et de décompression de la vidéo|Un type d’objectif de caméra|Un filtre de couleur|Un style de sous-titres
+Quelle est la cadence standard du cinéma ?|24 images par seconde|10 images par seconde|90 images par seconde|144 images par seconde
+`
+},
+{
+ id:"design",
+ n:"Graphic Design",
+ nf:"Design graphique",
+ e:"🖌️",
+ en:`
+Which software is best known for photo editing?|Adobe Photoshop|Microsoft Excel|Notepad|Visual Studio Code
+Which easy online tool is used to make posters and social media designs?|Canva|Wireshark|PuTTY|Arduino IDE
+In the traditional art color wheel, which two colors mix to make orange?|Red and yellow|Blue and yellow|Red and blue|Green and yellow
+What is typography?|The art of arranging and styling text|The study of colors|A type of image file|A drawing tool
+What does a logo mainly represent?|The identity of a brand|A price list|A file size|A password
+What does RGB stand for?|Red, Green, Blue|Right, Grid, Border|Raster, Gradient, Blur|Red, Gray, Black
+Which color mode is mainly used for printing?|CMYK|RGB|HEX|HSL
+Which file format supports transparency?|PNG|JPG|MP3|DOCX
+What is the main difference between vector and raster images?|Vector images scale without losing quality|Raster images scale without losing quality|Vector images are always photos|Raster images have no pixels
+Which Adobe software is best known for vector graphics?|Illustrator|Premiere Pro|Audition|Lightroom
+What is the purpose of a layout grid?|To align and organize elements consistently|To compress images|To change color modes|To add animations
+What is kerning?|The spacing between two specific letters|The size of a font|The thickness of a line|The color of text
+What does DPI measure?|The density of dots in a printed or digital image|The brightness of a screen|The weight of a font|The speed of a printer
+What is contrast in design?|A visible difference between elements, such as light and dark|Using only one color|Making all elements equal|Removing the background
+Which is a free, open-source alternative to Photoshop?|GIMP|Illustrator|InDesign|Lightroom
+`,
+ fr:`
+Quel logiciel est surtout connu pour la retouche photo ?|Adobe Photoshop|Microsoft Excel|Bloc-notes|Visual Studio Code
+Quel outil en ligne simple permet de créer des affiches et des visuels pour les réseaux sociaux ?|Canva|Wireshark|PuTTY|Arduino IDE
+Dans le cercle chromatique traditionnel, quelles deux couleurs donnent de l’orange en se mélangeant ?|Rouge et jaune|Bleu et jaune|Rouge et bleu|Vert et jaune
+Qu’est-ce que la typographie ?|L’art d’organiser et de styliser le texte|L’étude des couleurs|Un type de fichier image|Un outil de dessin
+Que représente principalement un logo ?|L’identité d’une marque|Une liste de prix|Une taille de fichier|Un mot de passe
+Que signifie RVB (RGB) ?|Rouge, Vert, Bleu|Droite, Grille, Bordure|Matriciel, Dégradé, Flou|Rouge, Gris, Noir
+Quel mode colorimétrique est surtout utilisé pour l’impression ?|CMJN (CMYK)|RVB (RGB)|HEX|TSL (HSL)
+Quel format de fichier prend en charge la transparence ?|PNG|JPG|MP3|DOCX
+Quelle est la principale différence entre une image vectorielle et une image matricielle ?|Une image vectorielle peut être agrandie sans perdre en qualité|Une image matricielle peut être agrandie sans perdre en qualité|Les images vectorielles sont toujours des photos|Les images matricielles n’ont pas de pixels
+Quel logiciel Adobe est surtout connu pour les graphiques vectoriels ?|Illustrator|Premiere Pro|Audition|Lightroom
+À quoi sert une grille de mise en page ?|À aligner et organiser les éléments de façon cohérente|À compresser les images|À changer les modes colorimétriques|À ajouter des animations
+Qu’est-ce que le crénage (kerning) ?|L’espacement entre deux lettres précises|La taille d’une police|L’épaisseur d’un trait|La couleur du texte
+Que mesure le DPI ?|La densité de points d’une image imprimée ou numérique|La luminosité d’un écran|Le poids d’une police|La vitesse d’une imprimante
+Qu’est-ce que le contraste en design ?|Une différence visible entre des éléments, comme le clair et le sombre|Utiliser une seule couleur|Rendre tous les éléments égaux|Supprimer l’arrière-plan
+Quelle alternative gratuite et open source à Photoshop existe-t-il ?|GIMP|Illustrator|InDesign|Lightroom
+`
+},
 ];
